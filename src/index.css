@@ -15,12 +15,16 @@
 }
 
 .img-div {
-  @apply bg-no-repeat;
-  @apply bg-cover;
-  @apply bg-center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 250px;
 }
 
 .img-div:hover {
-  @apply bg-gradient-to-r from-rgba(207, 114, 71, 0.8) to-hsla(36, 95%, 59%, 0.8) !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(207, 114, 71, 0.8),
+    hsla(36, 95%, 59%, 0.8)
+  ) !important;
 }
